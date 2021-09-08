@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.login-btn {
+  color: white;
+  background: #030303;
+  font-size: 2rem;
+  border: 2px solid #030303;
+  border-radius: 30px;
+  width: 10rem;
+  height: 5rem;
+  margin-bottom:2rem;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+}

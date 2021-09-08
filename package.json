@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@eosdacio/ual-wax": "^1.5.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -10,10 +11,17 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "eosjs": "^22.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "typescript": "^4.1.2",
+    "ual-anchor": "^1.0.9",
+    "ual-ledger": "^0.3.0",
+    "ual-reactjs-renderer": "^0.3.1",
+    "ual-scatter": "^0.3.0",
+    "ual-starteos": "^0.3.1",
+    "ual-wombat": "^0.3.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

@@ -3,20 +3,23 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const login = () => {
+    console.log('login');
+  }
+  
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+        <input type="button" value="Log In" className="login-btn" onClick={login} />
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/EOSIO/universal-authenticator-library"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn WAX Authentication
         </a>
       </header>
     </div>
