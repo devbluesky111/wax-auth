@@ -37,6 +37,11 @@
   }
 }
 
+.account-name {
+  color:#61dafb;
+  margin-bottom: 2rem;
+}
+
 .login-btn {
   color: white;
   background: #030303;

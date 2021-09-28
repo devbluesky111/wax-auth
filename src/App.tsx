@@ -1,18 +1,32 @@
-import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+const { withUAL } = require('ual-reactjs-renderer');
 
-function App() {
+function App(props:any) {
 
   const login = () => {
-    console.log('login');
+    props.ual.logout();
+    props.ual.showModal();
+  }
+
+  const logout = () => {
+    props.ual.logout();
   }
   
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <input type="button" value="Log In" className="login-btn" onClick={login} />
+        {props.ual?.activeUser ?
+            <>
+                <p>
+                    <div className="account-name">{props.ual.activeUser.accountName}</div>
+                    <input type="button" value="Log Out" className="login-btn" onClick={logout} />
+                </p>
+            </>
+        :
+          <input type="button" value="Log In" className="login-btn" onClick={login} />
+        }        
         <a
           className="App-link"
           href="https://github.com/EOSIO/universal-authenticator-library"
@@ -26,4 +40,4 @@ function App() {
   );
 }
 
-export default App;
+export default withUAL(App);
